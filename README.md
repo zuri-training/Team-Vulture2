@@ -1,10 +1,10 @@
 # Table of Contents
-- [Project Title](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#project-title)
-- [Project Description](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#project-description)
-- [Features](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#features)
-- [Tools](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#tech-stack)
-- [Clients](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#used-by)
-- [Team](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#Authors)
+- [Project Title](#project-title)
+- [Project Description](#project-description)
+- [Features](#features)
+- [Tools](#tech-stack)
+- [Clients](#used-by)
+- [Team](#authors)
 
 
 
@@ -18,21 +18,21 @@ Vulterm is a platfrom that allows users to generate personalized T&C(Terms and C
 
 # Features
 
-- Vulterm provides these basic Services
+  Vulterm provides these basic Services
 ## Authenticated users
-: Full access to the platform <br>
-: Allows users to enter and fill in basic data <br>
-: Save data and download at a later time <br>
-: Users can export,download,share, and website embed <br>
-: Generate a Privacy Policy agreement and Terms and Conditions <br>
-: Preview and Edit the agreement before generating it
+- Full access to the platform <br>
+- Allows users to enter and fill in basic data <br>
+- Save data and download at a later time <br>
+- Users can export,download,share, and website embed <br>
+- Generate a Privacy Policy agreement and Terms and Conditions <br>
+- Preview and Edit the agreement before generating it
 
 ## Unauthenticated users
-: View the platform and view basic information about it <br>
-: Access to registration page to view more details <br>
-: View and interact with the User documentation page <br>
-: Access to the Contact page <br>
-: No access to full use until registered 
+- View the platform and view basic information about it <br>
+- Access to registration page to view more details <br>
+- View and interact with the User documentation page <br>
+- Access to the Contact page <br>
+- No access to full use until registered 
 
 
 # Tech Stack
@@ -84,4 +84,4 @@ This project is used by the following companies:
 [Ogochukwu](https://github.com/Caro-lit)
   </details>
   
-  - [Back to top](https://github.com/zuri-training/Team-Vulture2/edit/main/README.md#table-of-contents)
+  - [Back to top](#table-of-contents)
