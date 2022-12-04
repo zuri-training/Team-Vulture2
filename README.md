@@ -14,7 +14,8 @@ Vulterm is a platfrom that allows users to generate personalized T&C(Terms and C
 
 # Project Description
   A unique Terms and Conditions and Privacy policy is essential to protect any online business from legal risk or liability. Drafting a T&C and Privacy policy can be cumbersome,expensive,and time consuming. Vulterm resolves these deficiences as it allows Authenticated users to generate a personalized T&C and Privacy policy for free at the click of a button. <br>
-  [Documentation](https://shorturl.at/drvlN)
+  [Documentation](https://www.figma.com/file/FHyaAy6QFKBfQefJ0hnHj1/Vulterm-Documentation?node-id=0%3A1&t=PwiUVYQE8d5kzB7j-0
+)
 
 # Features
 
