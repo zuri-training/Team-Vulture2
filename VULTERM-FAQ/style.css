@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #e5edee;
+}
+.Navbar{
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3d5254;
+}
+.Logo{
+    width: 50px;
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    position: relative;
+    margin: 0 45px;
+}
+.menu{
+    display: inline-block;
+    margin-left: 70px;
+}
+.Navbar li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 25px;
+    font-size: -25px;
+    text-transform: uppercase;
+}
+.Navbar li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+  width: 100px;
+  padding: 10px 20px 10px 50px;
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid aliceblue;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+#login{
+    border-radius: 12px;
+    padding: 5px 0px;
+    margin-left: 250px;
+    border: 2px solid #6db953;
+    color: #6db953;
+}
+#signup{
+    border-radius: 12px;
+    background: #81a8ac;
+    margin-right: 75px;
+    padding: 5px 0;
+}
