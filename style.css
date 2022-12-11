@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e5edee;
+    font-family: 'Poppins', sans-serif;
+}
+.Navbar{
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3d5254;
+}
+.Logo{
+    width: 50px;
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    position: relative;
+    margin: 0 45px;
+}
+.menu{
+    display: inline-block;
+    margin-left: 70px;
+}
+.Navbar li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin: 0 25px;
+    font-size: -25px;
+    text-transform: uppercase;
+}
+.Navbar li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+  width: 100px;
+  padding: 10px 20px 10px 50px;
+  text-align: center;
+  margin: 15px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid aliceblue;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+#login{
+    border-radius: 12px;
+    padding: 5px 0px;
+    margin-left: 250px;
+    border: 2px solid #6db953;
+    color: #6db953;
+}
+#signup{
+    border-radius: 12px;
+    background: #81a8ac;
+    margin-right: 75px;
+    padding: 5px 0;
+}
+.body1{
+    background-color: #e5edee;
+    /*width: 100%;*/
+    padding: 30px;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.body1 h1{
+    margin: 0 100px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.body1 p{
+    margin: 15px 100px;
+}
+.body1 button{
+    margin: 5px 180px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 0;
+    background-color: #7ba4a8;
+    color: #000;
+}
+.body1 .image1{
+    float: left;
+    margin: 10px 10px;
+}
+.body2{
+    background-color: #d2dfad;
+    padding: 25px 104px;
+    text-align: left;
+}
+.body2 .content2{
+    float: right;
+}
+.body2 h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 15px;
+}
+.body2 p{
+    font-size: 15px;
+    margin: 15px ;
+}
+.body2 .image2{
+    margin: 25px 150px;
+}
+.body3{
+    background-color: #d2dfad;
+    padding: 25px 104px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.body3 h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 25px;
+}
+.body3 p{
+    font-size: 15px;
+    margin: 25px;
+}
+.body3 i{
+    margin-right: 5px;
+}
+.body3 .image3{
+    align-items: center;
+    margin: 100px 0;
+}
+.body4{
+    background-color: #d3e1e2;
+    padding: 25px 104px;
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.body4 h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 25px;
+}
+.body4 p{
+    font-size: 15px;
+    margin: 25px;
+}
+.body4 button{
+    margin: 5px 180px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #7ba4a8;
+    color: #000;
+}
+.body5{
+    background-color: #e5edee;
+    padding: 25px  104px;
+    display: flex;
+}
+
+.body5 > .left{
+    width: 70%
+}
+
+.body5 > .right{
+    width: 30%;
+}
+.body5 h3{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.body5 > .left > .content5{
+    width: 100%;
+}
+.body5 > .left > .testimonies{
+    display: flex;
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+.body5 > .left > .testimonies > .testimony{
+    display: flex;
+    background-color: #bdd1d3;
+    flex-direction: column;
+    width: calc(90%/3);
+    padding: 20px;
+
+}
+.body5 > .left > .testimonies > .testimony > .top{
+    display: flex;
+    margin: 0 10px;
+    width: 100%;
+}
+.body5 > .left > .testimonies > .testimony > .top > img{
+    margin-right: auto;
+}
+.body5 > .left > .testimonies > .testimony > .top > .title{
+    display: flex;
+    flex-direction: column;
+}
+.body5 > .left > .testimonies > .testimony > .top > .title > h5{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+}
+.body5 > .left > .testimonies > .testimony > .top > .title > p{
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.0025em;
+    color: #6C6B6C;
+}
+
+.body5 > .left > .testimonies > .testimony:nth-child(2){
+    background-color: #7BA4A8;
+    margin: 0 calc(10%/2);
+}
+
+.body5 > .left > .testimonies > .testimony img{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}
+.body5 > .left > .testimonies > .testimony > p{
+    margin: 50px 0;
+    width: 217px;
+    height: 71px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+}
+.body6{
+    margin: 0 104px;
+    position: relative;
+    margin-bottom: -140px;
+    z-index: 30;
+    background: #D2E0AD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body6 > h4{
+    font-size: 40px;
+    line-height: 60px;
+    color: #212612;
+    margin-bottom: 10px;
+}
+.body6 > p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.body6 > .subscribe{
+   margin-bottom: 60px;
+}
+.body6 > .subscribe > form > input{
+    width: 318px;
+    height: 55px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #A5C05B;
+}
+.body6 > .subscribe > form > input::placeholder{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    padding-left: 25px;
+    color: #484647;
+}
+.body6 > .subscribe > form > button{
+    width: 170px;
+    height: 55px;
+    background: #7BA4A8;
+    border-radius: 0;
+}
+footer{
+    height: 500px;
+    background-color: #000000;
+    padding: 0 104px;
+    padding-top: 160px;
+    color: #fff;
+}
