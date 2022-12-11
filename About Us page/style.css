@@ -141,7 +141,7 @@ footer{
     flex-basis: 20%;
     padding-left: 4rem;
 }
-.footer-box h5{
+.footer-box .head_5{
     color: #fff;
     font-size: 1rem;
 }
