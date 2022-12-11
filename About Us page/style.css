@@ -232,7 +232,7 @@ footer .footer-bottom{
     .footer-box{
         margin: autorem;
     }
-    .footer-box h5{
+    .footer-box .head_5{
         color: #fff;
         padding-top: 1.3rem;
     }
