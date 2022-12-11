@@ -22,7 +22,7 @@ a {
   grid-template-columns: auto auto;
 }
 input[type="email"],
-input[type="password"] {
+input[type="password"],input[type="text" i] {
   width: 50%;
   top: 50%;
   left: 50%;
