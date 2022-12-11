@@ -52,6 +52,20 @@
             <img src="./Image SU.jpg" alt="Phone">
            </div>
         </div>
+     <script>
+       const togglePassword = document.querySelector("#see-psw");
+       const password = document.querySelector("#id_psw");
+
+       togglePassword.addEventListener("click", function (e) {
+       // toggle the type attribute
+       const type = password.getAttribute("type") === "password" ? "text" : "password";
+       password.setAttribute("type", type);
+       // toggle the eye slash icon
+       this.classList.toggle("fa-eye");
+       });
+     </script>
+
+
 
         
 </body>
