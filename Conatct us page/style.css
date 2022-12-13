@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@300&display=swap'); 
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    
+  }
+  body { 
+    background-color:#a7c2c5;
+   background-size: cover;
+   
+      }
+
+        .contain1, .contain2{
+          position: relative;
+          align-items: center;
+          justify-content: center;
+display: flex;
+        }
+        .contain1{
+          font-size: 20px;
+          color: black;
+          font-weight: bold;
+        }
+        .contain2{
+          font-weight: bold;
+          padding: 10px;
+        }
+
+        .container{
+          display: flex;
+          position: relative;
+          height: auto;
+          width: auto;
+          padding-left: 8%;
+         padding-right: 8%;
+         padding-top: 20px;
+         margin: 20px;
+          
+          align-items: center;
+        justify-content:space-evenly;
+       
+        }
+        .container i{
+          
+          display: block;
+          padding-left: 8%;
+          padding-right: 8%;
+          padding-bottom: 8%;
+          font-size: 20px ;
+          text-align: center;
+          align-items: center;
+        justify-content:center;
+       
+        }
+        .form{
+          position: relative;
+          align-items: center;
+          justify-content: center;
+         display: flex;
+         font-weight: bold;
+         font-size: 20px;
+         margin-top: 50px;
+        }
+
+        .corm2{
+          display: flex;
+          padding-bottom: 8px;
+          height: 500px;
+          width: 800px;
+          margin: auto;
+          margin-top: 40px;
+        }
+        .corm{
+          width: 50%;
+          align-items: center;
+          margin: 40px;
+          padding: 12px;
+          margin: 15px ;
+
+        }
+       .corm p{font-size: 15px;
+          margin: 5px 0;
+        
+      color: black;}
+        
+     
+         
+
+        input{
+          font-size: 15px;
+          opacity: 0.5;
+          padding: 5px 5px;
+          font-weight: bold;
+          color: gray;
+          border: 1px solid whitesmoke;
+          border-radius:2px;
+          width: 90%;
+          background-color: white;
+        } 
+
+
+        input:hover{
+          cursor: pointer ;
+        }
+
+
+        .textarea{
+          background-color: white;
+          color: #666666;
+          padding: 1rem;
+          border-radius: 2px ;
+          border: 2px solid transparent;
+          outline: none;
+          line-height: 1.4;
+          width: 400px;
+          height: 200px;
+
+        }
+        .areadown p{
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+
+        .bmw{font-weight: bold;
+          font-size: 15px;
+          margin-top: 15px ;
+          padding: 1px;
+          display: inline-block;
+          justify-content: space-around;
+          
+          width: 40%;
+          border-radius: 2px;
+          border: 5px solid transparent;
+           background-color: #7ba4a8 ;
+           color: black;
+           
+           
+          
+        }
+        
+        
