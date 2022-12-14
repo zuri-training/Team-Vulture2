@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+* {
+ margin: 0;
+ padding: 0;
+ 
+}
+html,
+body {
+  height: 100%;
+}
+body { 
+    font-family: "poppins";
+}
+
+#sidebar {
+   background-color: #3d5254; 
+   width: 300px;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   box-shadow: 3px 0px 5px 1px rgba(0, 0, 0, 0.1) ;
+}
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+.term {
+    color: aqua;
+}
+
+.profileimg {
+    border-radius: 50%;
+}
+hr {
+    height: 1px;
+    background-color: black;
+    border: none;
+    
+}
+.linkcont {
+    padding: 0px 20px;
+}
+.links {
+    display: flex;
+    align-items: center;
+   
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.links  a {
+    color: #E5EDEE;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.maindashboard {
+    margin-left: 300px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    height: 100%;
+   padding: 20px 25px;
+   
+    
+}
+
+.inputbox {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3d5254;
+    width: 500px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.inputbox input {
+    background-color: #3d5254;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 75% auto ;
+    padding: 30px;
+}
+.grid h3 {
+    color: #555;
+    line-height: 22px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+[class^="item-"] {
+    height: 300px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: #CADBDC;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.item-1 a {
+    text-decoration: none;
+    color: #555;
+    padding-left: 500px;
+}
+.item-3 a {
+    text-decoration: none;
+    color: #555;
+    padding-left: 500px;
+}
+.item-2 a {
+    text-decoration: none;
+    color: #555;
+    padding-left: 20px;
+}
+.item-4 a {
+    text-decoration: none;
+    color: #555;
+    padding-left: 20px;
+}
+
+.boxcontainer{
+    
+    padding: 1px 0px;
+}
+.texts {
+   display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    width: 1090px;
+    height: 210px;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: #CADBDC;
+}
+.tinycircle {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #3d5254;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tinycircle1 {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #2eb6c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    align-items: center;
+   
+}
+.texts span {
+    color: #555;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bigcircle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: conic-gradient( #3d5254 0deg 90deg, #2eb6c2 90deg 270deg, #3d5254 270deg 360deg);
+    position: relative;
+    
+}
+
+
+@media (max-width: 1400px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+}
+@media (max-width: 950px) {
+    .titlecontainer h1{
+        display: none;
+    }
+    .links a {
+        display: none;
+    }
+    .profileimg {
+        display: none;
+    }
+    #sidebar {
+        width: 75px;
+    }
+    .maindashboard {
+        margin-left: 75px;
+    }
+    .texts {
+        width: 150px;
+        height: 400px;
+    }
+    .inputbox {
+        width: 200px;
+    }
+}
