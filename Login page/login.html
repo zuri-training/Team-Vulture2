@@ -39,31 +39,6 @@
         <img src="IMG.jpg">
       </div>
     </div>
-    <script>
-      const togglePassword = document.querySelector("#see-psw");
-
-    //   togglePassword.addEventListener("click", function () {
-    //   let password = document.querySelector("#id_psw");
-    //   // toggle the type attribute
-    //   if(password.type === "password"){
-    //     password.type = "text"
-    //     togglePassword.className = "fa-regular fa-eye"
-    //   } else{
-    //     password.type = "password"
-    //     togglePassword.className = "fa-regular fa-eye-slash"
-    //   }
-    //   });
-
-      //or 
-      
-      togglePassword.addEventListener("click", function (e) {
-        const password = document.querySelector("#id_psw");
-      // // toggle the type attribute
-        const type = password.getAttribute("type") === "password" ? "text" : "password";
-        password.setAttribute("type", type);
-        // toggle the eye slash icon
-        this.classList.toggle("fa-eye");
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

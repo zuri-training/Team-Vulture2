@@ -23,29 +23,32 @@
         </div>
          
         <div class="container">
-          <form class="form">
+          <form class="form" action="/Dashboard/Db.html" method="post" id="form">
             <p>E-mail address</p>
-            <input type="email" placeholder="aztechnologies121@gmail.com" name="Email" required>
-      
+            <input type="email" id="email" placeholder="aztechnologies121@gmail.com" name="Email" required>
+  
             <p>First Name</p>
-            <input type="text" name="firstname" placeholder="Azzez" required>
+            <input type="text" id="firstName" name="firstname" placeholder="Azzez" required>
             <p>Last Name</p>
-            <input type="text" placeholder="Olayemi" name="lastname" required> <br>
+            <input type="text" id="lastName" placeholder="Olayemi" name="lastname" required> <br>
+
+            <p>Username</p>
+            <input type="text" id="username" placeholder="Username" name="username" required> <br>
+
             <p>Phone Number</p>
-            <input type="phonenumber" placeholder="08156789230" name="phonenumber" required> <br>
+            <input type="phonenumber" id="phoneNumber" placeholder="08156789230" name="phonenumber" required> <br>
             
             <p> Input password</p>
-            <input type="password" name="password" autocomplete="current-password" required id="id_psw">
+            <input type="password" id="password" name="password" autocomplete="current-password" required id="id_psw">
             <i class="fa-regular fa-eye-slash" id="see-psw"></i>
 
-          
             <p> Confirm password</p>
-            <input type="password" name="confirmpassword" placeholder="" id="id_psw">
+            <input type="password" id="Cpassword" name="confirmpassword" placeholder="" id="id_psw">
             <i class="fa-regular fa-eye-slash" id="see-psw"></i>
   
            <p> <i class="fa fa-square-o" aria-hidden="true"></i> I would like to be added to vulterm's mailing list</p>
   
-            <button type="submit" class="sin"> Create Account</button>
+          <button type="submit" class="sin"> Create Account</button>
              
            </form> 
            <hr>
@@ -53,21 +56,6 @@
             <img src="./Image SU.jpg" alt="Phone">
            </div>
         </div>
-     <script>
-       const togglePassword = document.querySelector("#see-psw");
-       const password = document.querySelector("#id_psw");
-
-       togglePassword.addEventListener("click", function (e) {
-       // toggle the type attribute
-       const type = password.getAttribute("type") === "password" ? "text" : "password";
-       password.setAttribute("type", type);
-       // toggle the eye slash icon
-       this.classList.toggle("fa-eye");
-       });
-     </script>
-
-
-
-        
+     <script src="script.js"></script> 
 </body>
 </html>

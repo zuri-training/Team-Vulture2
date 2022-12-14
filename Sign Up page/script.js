@@ -1,38 +1,26 @@
-const togglePassword = document.querySelector("#see-psw");
 const form = document.getElementById("form")
+const togglePassword = document.querySelector("#see-psw");
+const password = document.querySelector("#id_psw");
 
-
-//   togglePassword.addEventListener("click", function () {
-//   let password = document.querySelector("#id_psw");
-//   // toggle the type attribute
-//   if(password.type === "password"){
-//     password.type = "text"
-//     togglePassword.className = "fa-regular fa-eye"
-//   } else{
-//     password.type = "password"
-//     togglePassword.className = "fa-regular fa-eye-slash"
-//   }
-//   });
-
-//or 
-      
 togglePassword.addEventListener("click", function (e) {
-    const password = document.querySelector("#id_psw");
-    // // toggle the type attribute
+    // toggle the type attribute
     const type = password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
     // toggle the eye slash icon
     this.classList.toggle("fa-eye");
 });
 
-
 form.onsubmit = function (e) {
   e.preventDefault();
 
-  fetch("https://team-vulture2-backend.vercel.app/login", {
+  fetch("https://team-vulture2-backend.vercel.app/users", {
     method: "POST",
     body: JSON.stringify({
+        username: document.getElementById("username").value,
         email: document.getElementById("email").value,
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        phoneNumber: document.getElementById("phoneNumber").value,
         password: document.getElementById("password").value
 }),
     headers: {
@@ -46,7 +34,6 @@ form.onsubmit = function (e) {
         return response.json();
     })
     .then(function (jsonResponse) {
-        console.log(jsonResponse["user"])
         form.submit()
         return jsonResponse["user"]
     })
