@@ -1,137 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-weight: 'poppins', 'sans-serif';
+    font-family: 'poppins', 'sans-serif';
 }
 body {
     background-color: #e5edee;
-    
-   
+
+
 }
 
-.Navbar{
+.navigation{
+    height: 100px;
     width: 100%;
-    margin: auto;
-    padding: 35px 0;
+    background-color:#004581;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: #3d5254;
-    position: relative;
-    z-index: 999;
-    overflow: visible;
-}
-.Logo{
-    background-color: #0b95b9;
-    color: black;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 2px;
-    margin: 0 45px;
-    cursor: pointer;
-}
-  
-.menu{
-      display: inline-block;
-      margin-left: 70px;
-
-}
-.Navbar li{
-      list-style: none;
-      display: inline-block;
-      position: relative;
-      margin: 0 25px;
-      font-size: -25px;
-      text-transform: uppercase;
-}
-.Navbar li a{
-      text-decoration: none;
-      color: #fff;
-      transition: all 0.3s;
-}
-.Navbar li a:hover {
-      color: #aaa;
-}
-.img1 {
-     padding-top: 16px;
-     padding-left: 5px;
-     width: 18px;
-}
-
-
-.dropdown {
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    margin-top: 0.3rem;
-    background: #d3e1e2;
-    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
-
-    transform: translateY(0.5rem);
-    visibility: hidden;
-    opacity: 0;
-}
-
-.show {
-    transform: translateY(0rem);
-    visibility: visible;
-    opacity: 1;
-}
-.arrow {
-    transform: rotate(180deg);
-    transition: 0.2s ease;
-}
-
-.dropdown .aa {
-    display: block;
-    align-items: center;
-    column-gap: var(--gap);
-    padding: 0.8rem 1rem;
-    text-decoration: none;
-    color: #555;
-    font-size: 15px;
-}
-
-.button{
-    width: 100px;
-    padding: 10px 20px 10px 50px;
     text-align: center;
-    margin: 15px 0;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid aliceblue;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-   position: relative;
+    justify-content: space-between;
+    padding: 0rem 7rem 0rem 5rem;
 }
-#login{
-    border-radius: 12px;
-    padding: 5px 0px;
-    margin-left: 250px;
-    border: 2px solid #6db953;
-    color: #6db953;
-    transition: transform .4s;
+
+nav{
+    display: flex;
+    justify-content: space-around;
 }
-#login:hover {
-    transform: scale(1.2);
+nav ul{
+    display: flex;
+    padding-left: 8rem;
+    align-items: center;
 }
-#signup{
-    border-radius: 12px;
-    background: #81a8ac;
-    margin-right: 75px;
-    padding: 5px 0;
-    transition: transform .4s;
+nav ul li{
+    list-style-type: none;
+    margin: 0rem 1.5rem;
 }
-#signup:hover {
-    transform: scale(1.2);
+nav ul li a{
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #555;
+}
+.logo{
+    color: black;
+    font-weight: 900;
+    border-radius: 2px;
+    width: 130px;
+    border: 2px solid transparent;
+    padding: 5px 10px ;
+    background: #018ABD;
+    font-size: 24px;
+}
+
+.links a{
+    padding: 0.6rem;
+    text-decoration: none;
+    color: #fff;
+    margin: 0rem 1rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+.links .login{
+    border: 1px solid #018ABD;
+}
+.sign-up{
+    background: #018ABD ;
+}
+
+main{
+    padding: 4rem 2rem;
+}
+
+.first-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.first-section h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+.first-section p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.second-section {
+
+}
+.second-section h3{
+    font-weight: 500;
+    font-size: 64px;
+    padding-bottom: 5rem;
 }
 
 .container {
@@ -141,19 +107,19 @@ body {
    justify-content: space-between;
    margin-top: 7%;
    margin-bottom: -10%;
-  
-   
+
+
 }
 .leftside {
     margin-left: 75px;
     margin-bottom: 250px;
-    
+
 }
 .leftside h1 {
     font-size: 50px;
     color: #212612;
     margin-bottom: 20px;
-    
+
 }
 .para1 {
     color: #555;
@@ -201,13 +167,13 @@ body {
 .hdin h2 {
     font-size: 30px;
     color: #252a16;
-    
+
 }
 .hdin p {
     color: #555;
     line-height: 22px;
     font-size: 20px;
-   
+
 }
 .checkcont{
     position: relative;
@@ -293,12 +259,12 @@ body {
     width: 100%;
     padding: 30px 0px;
     background: #e5edee;
-    
+
 }
 .aboutbody {
     width: 1130px;
     margin-left: 4%;
-    
+
 }
 .aboutbody h2 {
     color: black;
@@ -329,7 +295,7 @@ input[type="radio"]{
     width: 20px;
     height: 20px;
     margin-bottom: 30px;
-    
+
 }
 .lab .nam {
     display: inline-flex;
@@ -337,7 +303,7 @@ input[type="radio"]{
     padding: 10px 20px 10px 10px;
     border-radius: 50%;
     transition: .25s ease;
-    
+
 }
 
 .lab .nam:hover,
@@ -412,7 +378,7 @@ input[type="radio"]:checked + .nam:before {
 }
 
 .info {
-    
+
     display: flex;
     position: relative;
     align-items: center;
@@ -424,7 +390,7 @@ input[type="radio"]:checked + .nam:before {
 .info h2 {
     font-size: 30px;
     color: #252a16;
-    
+
 }
 .info p {
     color: #555;
@@ -511,7 +477,7 @@ input[type="radio"]:checked + .nam:before {
     margin-bottom: 100px;
 }
 .linfo {
-    margin-bottom: 100px; 
+    margin-bottom: 100px;
 }
 
 .empty {
@@ -524,13 +490,13 @@ input[type="radio"]:checked + .nam:before {
     background-color: #d3e1e2;
     width: 100%;
     padding: 1px 0px;
-    
+
 }
 
 .radcont2 {
     padding-top: 50px;
     margin-left: 100px;
-    
+
 }
 .radcont2 h4 {
     color: black;
@@ -550,7 +516,7 @@ input[type="radio"]:checked + .nam:before {
     width: 20px;
     height: 20px;
     margin-bottom: 30px;
-    
+
 }
 .lab3 .nam3 {
     display: inline-flex;
@@ -558,7 +524,7 @@ input[type="radio"]:checked + .nam:before {
     padding: 10px 20px 10px 10px;
     transition: .25s ease;
 
-    
+
 }
 
 .lab3 .nam3:before{
