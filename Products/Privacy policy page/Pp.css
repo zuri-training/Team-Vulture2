@@ -116,11 +116,38 @@ main{
     width: 100%;
 }
 
+.section-three{
+    display: flex;
+    justify-content: space-between;
+}
+.section-three .content{
+    flex-basis: 46%;
+}
+
+/*==========media query==========*/
 @media screen and (max-width:768px) {
     .second-section .container{
         flex-direction: column;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 container {
    display: flex;
    position: relative;
