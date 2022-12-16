@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pp.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="Navbar">
+        
+        <h1 class="Logo">Vulterm</h1>
+        <ul class="menu">
+          <li>
+            <a href="#" class="btnn" id="btnn">Products<img src="/iconimgs/icons8-down-25.png" class="img1" id="arrow"> </a>
+            <div class="dropdown" id="dropdown">
+                <a href="#privacy" class="aa">
+                    <img src="/iconimgs/icons8-security-shield-green-30.png" class="imags">
+                   <b> Privacy Policy</b><br><br>
+                     How Personal Information <br>collected is protected.
+                </a>
+                
+                <a href="#tandc" class="aa">
+                    <img src="/iconimgs/icons8-documents-25.png" class="imags">
+                   <b>Terms and Conditions</b><br><br>
+                    Legal agreement between <br>your service and a person.
+                </a>
+            </div>
+
+         </li>
+
+
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+
+        <button class="button" id="login">Log In</button>
+        <button class="button" id="signup">Sign Up</button>
+        
+      </div>
+  
+    
+      <div class="container">
+        <div class="leftside">
+            <h1>Privacy Policy Generator</h1>
+            <div class="para1">
+                <p> <b>Select the platform where your privacy policy will be used on.</b></p><br>
+            </div>
+            <div class="box">
+                <h4>Benefits</h4>
+                <p>
+                    <strong>
+                        Free hosting page<br>
+                        Edit as you wish <br>
+                        Update options anytime<br>
+                        Download as HTML, DOCX,<br>
+                        Plain text, Markdown.
+                    </strong>
+                </p>
+            </div>
+            <button class="btnleft">Preview</button>
+        </div>
+
+        <div class="rightside">
+            <div class="hdin">
+                <h2>Where will your privacy policy be used?</h2><br>
+                <p><b>Click all that applies</b></p>
+            </div><br><br>
+            <form>
+                <div class="checkcont">
+                    <input type="checkbox" id="first" class="inp"/>
+                    <label for="first" class="labl">
+                        <span class="icon"><img src="/iconimgs/icons8-app-24.png" width="25px"></span>
+                        <span class="name"><b>Website </b><br><br>Privacy Policy for Website</span>
+                    </label>
+
+                    <input type="checkbox" id="second" class="inp"/>
+                    <label for="second" class="labl">
+                        <span class="icon"><img src="/iconimgs/icons8-web-50.png" width="25px"></span>
+                        <span class="name"><b>App</b><br> <br>Privacy Policy for an App</span>
+                    </label>
+                </div>
+                <button class="btnright">Next Step</button>
+            </form>
+        </div>
+ </div>
+
+
+
+        <section class="about">
+            <div class="aboutbody">
+                <h2>About Your Business</h2>
+             <form>
+              <div class="aboutcont">
+                <div class="formboxL">
+
+                  <div class="radcont">
+                      <h4>Entity Type</h4>
+                         <label class="lab">
+                           <input type="radio" id="busi" name="radio" class="inpu"/>
+                           <span class="nam">Business</span>
+                         </label>
+                         <label class="lab">
+                           <input type="radio" id="ind" name="radio" class="inpu"/>
+                           <span class="nam">Individual</span>
+                         </label>
+                  </div>
+
+                  
+
+                   <label class="web">What is your website URL</label>
+                   <input type="text" placeholder="Mysite@gmail.com" class="fill" required>
+       
+                   <label class="web">Website Name</label>
+                   <input type="text" placeholder="Website name" class="fill" required>
+                    
+                </div>
+                <div class="formboxr">
+                    
+                   <label class="web">State</label>
+                   <input type="text" placeholder="e.g Venice" class="fill" required>
+       
+                   <label class="web">Country</label>
+                   <input type="text" placeholder="e.g Italy" class="fill" required>
+
+                </div>
+                
+             </div>
+             <button class="buton">Next Step</button>
+             </form>
+         </div>
+        </section>
+
+     <section class="infocont">
+        
+      <form>
+        <div class="info">
+        
+            <div class="linfo">
+                <h2>What kind of information do you collect <br>from your users?</h2><br>
+                <p>click all that apply</p><br>
+                <div class="radbtn">
+                    <input type="checkbox" id="username" name="username" class="inpu2">
+                    <label for="username" class="lab2"> Name/Username</label><br>
+                    <input type="checkbox" id="email" name="email" class="inpu2" >
+                    <label for="email" class="lab2"> Email Address</label><br>
+                    <input type="checkbox" id="phone" name="phone" class="inpu2" >
+                    <label for="phone" class="lab2"> Phone Numbers</label><br>
+                    <input type="checkbox" id="address" name="address" class="inpu2" >
+                    <label for="address" class="lab2"> Address, State, Province,Zip/postal code, city</label><br>
+                    <input type="checkbox" id="other" name="other" class="inpu2" >
+                    <label for="other" class="lab2">Others</label><br>
+                </div>
+            </div>
+
+            <div class="rinfo">
+                <h2>How can users contact you on questions<br> regarding your privacy policy?</h2><br>
+                <p>click all that apply</p><br>
+                <div class="radbtn">
+                    <input type="checkbox" id="visit" name="visit" class="inpu2" >
+                    <label for="visit" class="lab2">By visiting a page on our website</label><br>
+                    <input type="checkbox" id="mail" name="mail" class="inpu2" >
+                    <label for="mail" class="lab2">By sending a mail</label><br>
+                    <input type="checkbox" id="phone2" name="phone2" class="inpu2" >
+                    <label for="phone2" class="lab2"> By phone number</label><br>
+                    <input type="checkbox" id="pmail" name="pmail"  class="inpu2">
+                    <label for="pmail" class="lab2">By sending post mail</label><br>
+                    <input type="checkbox" id="other2" name="other2" class="inpu2" >
+                    <label for="other2" class="lab2">Others</label><br>
+                </div>
+            </div>
+         
+        </div>
+          <button class="buton2">Next Step</button>
+      </form>
+     </section>
+
+   <div class="empty"></div>
+
+   <div class="question">
+    
+    <form>
+        
+        <div class="radcont2">
+            <h4>Does your website/app send emails or newsletters to users?</h4>
+               <label class="lab3">
+                 <input type="radio" id="busi" name="radio" class="inpu3"/>
+                 <span class="nam3">Yes users can opt in to receive newsletters and emails from us</span>
+               </label>
+               <label class="lab3">
+                 <input type="radio" id="ind" name="radio" class="inpu3"/>
+                 <span class="nam3">No</span>
+               </label>
+
+               <h4>Do you use any digital analytics software for tracking purposes?</h4>
+               <label class="lab3">
+                 <input type="radio" id="busi" name="radio" class="inpu3"/>
+                 <span class="nam3">Yes, we use tracking solutions to measure website/app traffic</span>
+               </label>
+               <label class="lab3">
+                 <input type="radio" id="ind" name="radio" class="inpu3"/>
+                 <span class="nam3">No</span>
+               </label>
+
+               <h4>Does your website show ads</h4>
+               <label class="lab3">
+                 <input type="radio" id="busi" name="radio" class="inpu3"/>
+                 <span class="nam3">Yes</span>
+               </label>
+               <label class="lab3">
+                 <input type="radio" id="ind" name="radio" class="inpu3"/>
+                 <span class="nam3">No</span>
+               </label>
+        </div>
+        <button class="buton2">Next Step</button>
+    </form>
+   </div>
+   
+  <div class="choose">
+    <h2>Choose our Professional Privacy Policy</h2><br>
+    <p class="par3">Adapt my Privacy Policy to be compliant with</p><br>
+    <p class="par4">Click all that apply</p><br>
+     <form>
+       <div class="check3">
+        <div class="checkpara">
+        <input type="checkbox" id="caloppa" name="caloppa" class="inpu4" >
+        <label for="caloppa" class="lab4">CalOPPA</label><br>
+        <div class="boxa">
+         <h4>California Online Privacy Policy Act</h4>
+         <p>California Online Privacy Policy Act (CalOPPA) requires that any and all information
+            that you collect about california consumers be listed with your privacy policy.
+            The effective date of the CalOPPA is 1st january, 2014.
+         </p><br><br>
+        </div>
+        </div>
+
+        <div class="checkpara">
+        <input type="checkbox" id="gdpr" name="gdpr" class="inpu4" >
+        <label for="gdpr" class="lab4">GDPR</label><br>
+        <div class="boxa">
+            <h4>General Data Protection Regulation</h4>
+            <p>General Data Protection Regulation (GDPR) protects EU individual's fundamental right
+               and freedom particularly their right to protection of their personal data.
+               Effective date of the GDPR is 28th May, 2018.
+            </p><br><br>
+        </div>
+        </div>
+
+        <div class="checkpara">
+        <input type="checkbox" id="ccpa" name="ccpa" class="inpu4" >
+        <label for="ccpa" class="lab4">CCPA</label><br>
+        <div class="boxa">
+            <h4>California Consumer Privacy Act</h4>
+            <p>California Consumer Privacy Act (CCPA) is a state wide privacy law that regulates how
+               businesses all over the world are allowed to handle the Personal Information(PI)
+               of california residents. The effective date of CCPA is 1st january, 2020.
+            </p><br><br>
+        </div>
+        </div>
+
+       </div>
+       <div class="submit1">
+        
+        <label class="web2">Submit your email address</label>
+        <input type="text" placeholder="Mysite@gmail.com" class="fill2" required><br>
+        <p>To ensure safe delivery</p>
+
+       </div>
+       <button class="buton2">Submit</button>
+     </form>
+  </div>
+
+  
+   
+         <footer><!---------------footer--------------->
+            <section class="ready-to-join" id="ready-to-join">
+                <h1>Ready to join us?</h1>
+                <p>Subscribe to our newsletter and stay updated!</p>
+               <div class="subscribe">
+                    <input type="email" name="email" id="email" placeholder="Enter your E-mail">
+                    <button>subscribe</button>
+               </div>
+    
+            </section>
+            <section class="footer-wrapper">
+                <div class="footer-box" id="part-1">
+                    <h5 id="header-01">What our website do</h5>
+                   <div class="description">
+    
+                            <p>Here we help you genereate the perfect terms </p>
+                            <p>and conditions/privacy policy required for </p>
+                            <p>your business.</p>
+    
+                   </div>
+    
+                </div>
+                <div class="footer-box" id="part-2">
+                    <h5>Our Policies</h5>
+                    <div class="footer-policy-links">
+                        <li><a href="">Privacy policy</li>
+                        <li><a href="">T&C policy</a></li>
+                        <li><a href="">Disclaimer</a></li>
+                    </div>
+                </div>
+                <div class="footer-box" id="part-3">
+                    <h5>About Vulterm</h5>
+                    <div class="footer-quick-links">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Blog</a></li>
+                    </div>
+                </div>
+                <div class="footer-box" id="part-4">
+                    <h5>Need help?</h5>
+                    <div class="footer-help-links">
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Our socials</a></li>
+                    </div>
+                </div>
+            </section>
+            <hr id="hr">
+            <div class="footer-bottom">
+                <span>copyright <small id="date"></small> vulterm</span>
+                <span>All rights reserved</span>
+            </div>
+    
+        </footer>
+        
+        <script src="Pp.js"></script>
+</body>
+
+</html>
