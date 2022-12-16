@@ -5,69 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./su.css" rel="stylesheet"/>
+    <link href="sign-up.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/4e5b9bdb1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <header>
+    <header>
 
-     </header>
-
-
-        <!--MAIN--> 
-        <div class="Signup"> 
-          <h1> Join  Vul<span>term</span></h1>
-        </div>
-        <div class="Signup">
-          <p style="color: black;"> Already have an account? <span>Sign in</span></p>
-        </div>
-         
-        <div class="container">
-          <form class="form">
-            <p>E-mail address</p>
-            <input type="email" placeholder="aztechnologies121@gmail.com" name="Email" required>
-      
-            <p>First Name</p>
-            <input type="text" name="firstname" placeholder="Azzez" required>
-            <p>Last Name</p>
-            <input type="text" placeholder="Olayemi" name="lastname" required> <br>
-            <p>Phone Number</p>
-            <input type="phonenumber" placeholder="08156789230" name="phonenumber" required> <br>
-            
-            <p> Input password</p>
-            <input type="password" name="password" autocomplete="current-password" required id="id_psw">
-            <i class="fa-regular fa-eye-slash" id="see-psw"></i>
-
-          
-            <p> Confirm password</p>
-            <input type="password" name="confirmpassword" placeholder="" id="id_psw">
-            <i class="fa-regular fa-eye-slash" id="see-psw"></i>
-  
-           <p> <i class="fa fa-square-o" aria-hidden="true"></i> I would like to be added to vulterm's mailing list</p>
-  
-            <button type="submit" class="sin"> Create Account</button>
-             
-           </form> 
-           <hr>
-           <div class="side">
-            <img src="./Image SU.jpg" alt="Phone">
-           </div>
-        </div>
-     <script>
-       const togglePassword = document.querySelector("#see-psw");
-       const password = document.querySelector("#id_psw");
-
-       togglePassword.addEventListener("click", function (e) {
-       // toggle the type attribute
-       const type = password.getAttribute("type") === "password" ? "text" : "password";
-       password.setAttribute("type", type);
-       // toggle the eye slash icon
-       this.classList.toggle("fa-eye");
-       });
-     </script>
+    </header>
 
 
+       <!--MAIN-->
+       <div class="Signup">
+         <h1> Join  Vul<span>term</span></h1>
+       </div>
+       <div class="Signup">
+         <p style="color: black;"> Already have an account? <span>Sign in</span></p>
+       </div>
 
-        
+       <div class="container">
+         <form class="form" action="#" method="post">
+           <p>E-mail address</p>
+           <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+
+           <p>First Name</p>
+           <input type="text" name="firstname" id="firstname" required>
+           <p>Last Name</p>
+           <input type="text" id="lastname" name="lastname" required> <br>
+           <p>Phone Number</p>
+           <input type="phonenumber" name="phonenumber" required> <br>
+
+           <p> Input password</p>
+           <input type="password" name="password" required id="password">
+           <i class="fa-regular fa-eye-slash" id="show-password"></i>
+
+
+           <p> Confirm password</p>
+           <input type="password" name="confirmpassword" placeholder="" id="confirmpassword">
+           <i class="fa-regular fa-eye-slash" id="hide-password"></i>
+
+          <label><input type="checkbox"> I would like to be added to Vulterm's mailing list</label>
+
+          <a href="Login.html"><button type="submit" class="sin">Create Account</button></a>
+
+          </form>
+          <hr>
+          <div class="side">
+           <img src="IMG.png" alt="Phone">
+          </div>
+       </div>
+    <script src="sign-up.js"></script>
 </body>
 </html>
