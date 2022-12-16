@@ -1,4 +1,3 @@
-<<<<<<< HEAD:Sign Up page/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,129 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./style.css" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/4e5b9bdb1b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-     <header>
-
-     </header>
-
-
-        <!--MAIN--> 
-        <div class="Signup"> 
-          <h1> Join  Vul<span>term</span></h1>
-        </div>
-        <div class="Signup">
-          <p style="color: black;"> Already have an account? <span>Sign in</span></p>
-        </div>
-         
-        <div class="container">
-          <form class="form" action="https://tolulophey.github.io/Team-Vulture2/Dashboard/Db.html" method="post" id="form">
-            <p>E-mail address</p>
-            <input type="email" id="email" placeholder="aztechnologies121@gmail.com" name="Email" required>
-  
-            <p>First Name</p>
-            <input type="text" id="firstName" name="firstname" placeholder="Azzez" required>
-            <p>Last Name</p>
-            <input type="text" id="lastName" placeholder="Olayemi" name="lastname" required> <br>
-
-            <p>Phone Number</p>
-            <input type="phonenumber" id="phoneNumber" placeholder="08156789230" name="phonenumber" required> <br>
-            
-            <p> Input password</p>
-            <input type="password" id="password" name="password" autocomplete="current-password" required id="id_psw">
-            <i class="fa-regular fa-eye-slash" id="see-psw"></i>
-
-            <p> Confirm password</p>
-            <input type="password" id="Cpassword" name="confirmpassword" placeholder="" id="id_psw">
-            <i class="fa-regular fa-eye-slash" id="see-psw"></i>
-  
-           <p> <i class="fa fa-square-o" aria-hidden="true"></i> I would like to be added to vulterm's mailing list</p>
-  
-          <button type="submit" class="sin"> Create Account</button>
-             
-           </form> 
-           <hr>
-           <div class="side">
-            <img src="./Image SU.jpg" alt="Phone">
-           </div>
-        </div>
-     <script src="script.js"></script> 
-</body>
-</html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
     <link href="./su.css" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/4e5b9bdb1b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-     <header>
-
-     </header>
-
-
-        <!--MAIN--> 
-        <div class="Signup"> 
-          <h1> Join  Vul<span>term</span></h1>
+  <header>
+  </header>
+  <main>
+    <div class="signup"> 
+      <h1> Join  Vul<span>term</span></h1>
+      <p style="color: black;"> Already have an account? <span>Sign in</span></p>
+    </div>
+    <div class="container">
+      <form class="form" id="form" action="" method="post">
+        <div class="form-control">
+          <label for="email">E-mail address</label>
+          <input type="email" id="email" placeholder="aztechnologies121@gmail.com" name="email">
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <img class="success-icon" src="./images/icon-success.png" alt="icon-success">
+          <small>Error Message</small>
         </div>
-        <div class="Signup">
-          <p style="color: black;"> Already have an account? <span>Sign in</span></p>
-        </div>
-         
-        <div class="container">
-          <form class="form">
-            <p>E-mail address</p>
-            <input type="email" placeholder="aztechnologies121@gmail.com" name="Email" required>
-      
-            <p>First Name</p>
-            <input type="text" name="firstname" placeholder="Azzez" required>
-            <p>Last Name</p>
-            <input type="text" placeholder="Olayemi" name="lastname" required> <br>
-            <p>Phone Number</p>
-            <input type="phonenumber" placeholder="08156789230" name="phonenumber" required> <br>
-            
-            <p> Input password</p>
-            <input type="password" name="password" autocomplete="current-password" required id="id_psw">
-            <i class="fa-regular fa-eye-slash" id="see-psw"></i>
-
-          
-            <p> Confirm password</p>
-            <input type="password" name="confirmpassword" placeholder="" id="id_psw">
-            <i class="fa-regular fa-eye-slash" id="see-psw"></i>
-  
-           <p> <i class="fa fa-square-o" aria-hidden="true"></i> I would like to be added to vulterm's mailing list</p>
-  
-            <button type="submit" class="sin"> Create Account</button>
-             
-           </form> 
-           <hr>
-           <div class="side">
-            <img src="./Image SU.jpg" alt="Phone">
-           </div>
-        </div>
-     <script>
-       const togglePassword = document.querySelector("#see-psw");
-       const password = document.querySelector("#id_psw");
-
-       togglePassword.addEventListener("click", function (e) {
-       // toggle the type attribute
-       const type = password.getAttribute("type") === "password" ? "text" : "password";
-       password.setAttribute("type", type);
-       // toggle the eye slash icon
-       this.classList.toggle("fa-eye");
-       });
-     </script>
-
-
-
         
+        <div class="form-control">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstname" placeholder="Azzez" >
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <img class="success-icon" src="./images/icon-success.png" alt="icon-success">
+          <small>Error Message</small>
+        </div>
+        
+        <div class="form-control">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" placeholder="Olayemi" name="lastname">
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <img class="success-icon" src="./images/icon-success.png" alt="icon-success">
+          <small>Error Message</small>
+        </div>
+        
+        <div class="form-control">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="phonenumber" id="phoneNumber" placeholder="08156789230" name="phoneNumber">
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <img class="success-icon" src="./images/icon-success.png" alt="icon-success">
+          <small>Error Message</small>
+        </div>
+        
+        <div class="form-control">
+          <label for="password"> Input password</label>
+          <input type="password" id="password" name="password" placeholder="Password">
+        <!-- <i class="fa-regular fa-eye-slash" id="see-psw"></i> -->
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <img class="success-icon" src="./images/icon-success.png" alt="icon-success">
+          <small>Error Message</small>
+        </div>
+        
+        <div class="form-control">
+          <label for="CPassword"> Confirm password</label>
+          <input type="password" id="CPassword" name="CPassword" placeholder="Confirm password">
+          <!-- <i class="fa-regular fa-eye-slash" id="see-psw"></i> -->
+          <img class="error-icon" src="./images/icon-error.svg" alt="icon-error">
+          <img class="success-icon" src="./images/icon-success.png" alt="icon-success">
+          <small>Error Message</small>
+        </div>
+        <div class="consent">
+          <input type="checkbox" name="mailList" id="mailList" >
+          <label for="mailList">I would like to be added to vulterm's mailing list</label>
+        </div>
+        <button type="submit"> Create Account</button>
+
+        <!-- <div class="failure_message">
+          <h2>Registration UnSuccessful!!!</h2>
+          <p>The email address provided is associated with another user</p>
+        </div> -->
+      </form> 
+        <hr>
+      <div class="side">
+        <img src="./images/Image SU.jpg" alt="Phone">
+      </div>
+    </div>
+    <!-- <section class="form_message">
+      <div class="success_message">
+        <h2>Registration Succesful!!!</h2>
+        <p>you will be redirected to the login page, if not click <a href="../Login page/login.html">here</a></p>
+      </div>
+    </section> -->
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script> 
+  <script src="script.js"></script>
+  <script>
+      
+  </script>
 </body>
 </html>
->>>>>>> upstream/main:Sign Up page/su.html

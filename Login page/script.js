@@ -1,23 +1,8 @@
-const togglePassword = document.querySelector("#see-psw");
+const togglePassword = document.querySelector("#see_psw");
 const form = document.getElementById("form")
 
-
-//   togglePassword.addEventListener("click", function () {
-//   let password = document.querySelector("#id_psw");
-//   // toggle the type attribute
-//   if(password.type === "password"){
-//     password.type = "text"
-//     togglePassword.className = "fa-regular fa-eye"
-//   } else{
-//     password.type = "password"
-//     togglePassword.className = "fa-regular fa-eye-slash"
-//   }
-//   });
-
-//or 
-      
 togglePassword.addEventListener("click", function (e) {
-    const password = document.querySelector("#id_psw");
+    const password = document.querySelector("#password");
     // // toggle the type attribute
     const type = password.getAttribute("type") === "password" ? "text" : "password";
     password.setAttribute("type", type);
@@ -25,20 +10,74 @@ togglePassword.addEventListener("click", function (e) {
     this.classList.toggle("fa-eye");
 });
 
+//Form Validation
+function checkInputs() {
+  // trim to remove the whitespaces
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();;
+  if (emailValue === "") {
+    setErrorFor(email, "Email cannot be empty");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(email, "Looks like this is not an email");
+  } else {
+    setSuccessFor(email);
+  }
+
+  if (passwordValue === "") {
+    setErrorFor(password, "Password cannot be empty");
+  } else if (passwordValue.length < 8){
+    setErrorFor(password, "password must have minimum of 8 characters");
+  }else {
+    setSuccessFor(password);
+  }
+  
+}
+
+//setError function
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "form-control error";
+  small.innerText = message;
+}
+
+//set success function
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "form-control success";
+}
+//email validation function
+function isEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
+}
+
+
+//To redirect staight to the dashboard if the user is already login
+window.onload = (e)=>{
+  e.preventDefault()
+  if (JSON.parse(localStorage.getItem("auth"))){
+      window.location.replace("../Dashboard/Db.html")
+  }
+}
+
 
 form.onsubmit = function (e) {
   e.preventDefault();
-
-  fetch("https://team-vulture2-backend.vercel.app/login", {
-    method: "POST",
-    body: JSON.stringify({
-        email: document.getElementById("email").value,
-        password: document.getElementById("password").value
-}),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  })
+  checkInputs()
+  const formControls = document.querySelectorAll(".success")
+  if(formControls.length ===2){
+    fetch("https://team-vulture2-backend.vercel.app/users/login", {
+      method: "POST",
+      body: JSON.stringify({
+          email: document.getElementById("email").value,
+          password: document.getElementById("password").value
+  }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
     .then(function (response) {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -46,11 +85,29 @@ form.onsubmit = function (e) {
         return response.json();
     })
     .then(function (jsonResponse) {
-        console.log(jsonResponse["user"])
         form.submit()
         return jsonResponse["user"]
     })
+    .then(function (user) {
+        localStorage.setItem("user", JSON.stringify(user))
+        localStorage.setItem("auth", true)
+        swal({  
+          title: "Login!!!",  
+          text: " Login Successfully",  
+          icon: "success",  
+          button: "OK!",  
+        });
+        // window.location.href = "../Dashboard/Db.html"
+        window.location.replace("../Dashboard/Db.html")
+    })
     .catch(function (err) {
         console.log(err.message)
+        swal({  
+          title: "Error!!!",  
+          text: " Login failed, Please verify your details and try again",  
+          icon: "failure",  
+          button: "OK!",  
+        });
     });
+  }
 };
