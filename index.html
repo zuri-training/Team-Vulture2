@@ -16,19 +16,42 @@
     ></script>
   </head>
   <body>
+    <!--------header------>
+
     <header>
-      <nav class="Navbar">
-        <h1 class="Logo">VULTERM</h1>
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="FAQ.html">FAQ</a></li>
-          <li><a href="About.html">About Us</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-        <button class="btn" type="button" id="login"><a href="Login.html">Log In</a></button>
-        <button class="btn" type="button" id="signup"><a href="Signup.html">Sign Up</a></button>
-      </nav>
-    </header>
+        <div class="navigation">
+            <nav>
+                <button class="logo">Vulterm</button>
+                <navbar class="nav-wrapper">
+                    <ul>
+                        <div>
+                            <li class="nav-link">
+                                <a href="./index.html"> Home</a>
+                            </li>
+                             <li class="nav-link">
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#"> Contact Us</a>
+                            </li>
+                        </div>
+                        <section class="links">
+                            <a href="./VULTERM-LOGIN/login.html" class="login nav-link">Log in</a>
+                            <a href=" #" class="sign-up nav-link">Sign Up</a>
+                        </section>
+                    </ul>
+
+                </navbar>
+                <div class="hamburger" id="hamburger">
+                    <span class="bars" id="bars">&#9776;</span>
+                </div>
+            </nav>
+        </div>
+    </header><!-------header ends here-->
+
     <main>
       <section class="body1">
         <div class="content1">
@@ -37,7 +60,7 @@
             Here we help you generate the perfect terms and condition/ privacy
             policy <br />required for your business
           </p>
-          <a href="Signup.html"><button>Get Started</button></a>
+          <button><i class="fa-light fa-file-pen"></i>Get Started</button>
         </div>
         <div class="image1">
           <img src="IMAGES/IMG1.PNG" />
@@ -100,7 +123,7 @@
             Blogger,Wordpress,Shopify and literally all kinds of services out
             there asking<br />for your policies
           </p>
-          <button type="button" id="btn1">
+          <button type="button">
             Read More<i class="fa-solid fa-chevrons-right"></i>
           </button>
         </div>
@@ -203,28 +226,28 @@
             <div class="footer-box" id="part-3">
                 <h5>About Vulterm</h5>
                 <div class="footer-quick-links">
-                    <li><a href="About.html">About us</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Blog</a></li>
                 </div>
             </div>
             <div class="footer-box" id="part-4">
                 <h5>Need help?</h5>
                 <div class="footer-help-links">
-                    <li><a href="Contact.html">Contact us</a></li>
+                    <li><a href="">Contact us</a></li>
                     <li><a href="">Our socials</a></li>
                 </div>
             </div>
         </section>
         <hr id="hr">
         <div class="footer-bottom">
-            <span>Copyright <small id="date"></small> Vulterm</span>
+            <span>copyright <small id="date"></small> vulterm</span>
             <span>All rights reserved</span>
         </div>
 
     </footer>
-    <script>
-        document.getElementById("date").innerHTML = new Date().getFullYear();
+    <script src="index.js">
+
     </script>
   </body>
 </html>
