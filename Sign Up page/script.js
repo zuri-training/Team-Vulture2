@@ -138,7 +138,7 @@ form.onsubmit = function (e) {
           swal({  
             title: "Registration UnSuccessful!!!",  
             text: "The email address provided is associated with another user",  
-            icon: "failure",  
+            icon: "alert",  
             button: "OK!",  
           });
       });

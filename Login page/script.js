@@ -1,5 +1,6 @@
 const togglePassword = document.querySelector("#see_psw");
 const form = document.getElementById("form")
+const rememberMe = document.getElementById("RememberMe")
 
 togglePassword.addEventListener("click", function (e) {
     const password = document.querySelector("#password");
@@ -89,15 +90,21 @@ form.onsubmit = function (e) {
         return jsonResponse["user"]
     })
     .then(function (user) {
-        localStorage.setItem("user", JSON.stringify(user))
-        localStorage.setItem("auth", true)
+        if(rememberMe.checked){
+          localStorage.setItem("user", JSON.stringify(user))
+          localStorage.setItem("auth", true)
+          localStorage.setItem("remember", 1)
+        } else{
+          sessionStorage.setItem("user", JSON.stringify(user))
+          sessionStorage.setItem("auth", true)
+          localStorage.setItem("remember", 0)
+        }
         swal({  
           title: "Login!!!",  
           text: " Login Successfully",  
           icon: "success",  
           button: "OK!",  
         });
-        // window.location.href = "../Dashboard/Db.html"
         window.location.replace("../Dashboard/Db.html")
     })
     .catch(function (err) {
