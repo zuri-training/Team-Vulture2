@@ -175,7 +175,6 @@ main > .consents.active{
 main > .consents > .checks > .product_consent{
     margin: 10px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 main > .consents > .checks > .product_consent > input{
