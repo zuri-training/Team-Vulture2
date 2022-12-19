@@ -135,21 +135,12 @@ form.onsubmit = function (e) {
       })
       .catch(function (err) {
           console.log(err.message)
-          if(err.message == "unable to fetch"){
-            swal({  
-              title: "Registration Unsuccessful!!!",  
-              text: "please try again later",  
-              icon: "alert",  
-              button: "OK!",  
-            });
-          } else {
-            swal({  
-              title: "Registration Unsuccessful!!!",  
-              text: "The email address provided is associated with another user",  
-              icon: "alert",  
-              button: "OK!",  
-            });
-          }
+          swal({  
+            title: "Registration Unsuccessful!!!",  
+            text: "please try again later",  
+            icon: "alert",  
+            button: "OK!",  
+          });
       });
   };
   }

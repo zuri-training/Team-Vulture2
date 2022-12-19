@@ -116,6 +116,13 @@ form.onsubmit = function (e) {
             icon: "alert",  
             button: "OK!",  
           });
+        } else if(err.status == 404) {
+          swal({  
+            title: "Error!!!",  
+            text: "User not found, Please verify your details and try again",  
+            icon: "failure",  
+            button: "OK!",  
+          });
         } else {
           swal({  
             title: "Error!!!",  
