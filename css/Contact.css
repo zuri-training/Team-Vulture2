@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e5edef;
+  background-size: cover;
+}
+.contain1 > p,
+.contain2 > p{
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #1A191B;
+  margin-top: 20px;
+}
+.contain2 > p {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.container a{
+  text-decoration: none;
+  color: inherit;
+}
+.container > div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 30px;
+}
+.container > div > i {
+  display: block;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+.container > div > P {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  color: #1A191B;
+}
+ main > h2{
+  font-weight: 600;
+  margin-bottom: 90px;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  color: #212612;
+ }
+
+label{
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1A191B;
+}
+
+form{
+  display: flex;
+  margin: 0 207px;
+  justify-content: center;
+}
+form > .left{
+  width: 50%;
+}
+form > .right{
+  width: 50%;
+}
+form > .left {
+  margin-right: 50px;
+}
+form input{
+  width: 90%;
+  padding: 10px 20px;
+  height: 76px;
+  background: #FEFCFC;
+  border: 1px solid #9747FF;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+form textarea{
+  width: 401px;
+  height: 373px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  background-color: #FEFCFC;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #353131;
+}
+/* form input:focus,
+form textarea:focus{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  color: #353131;
+  padding: 10px 20px;
+} */
+form > .left > .button,
+form > .right > .button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+form > .left > .button > button,
+form > .right > .button > button{
+  width: 193px;
+  height: 50px;
+  background: #004581;
+  border-radius: 16px;
+  padding: 10px 23px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #F7F7F7;
+}
+form > .right > .button{
+  visibility: hidden;
+}
+@media screen and (max-width:1100px) {
+  form {
+    display: flex;
+    margin: 0 100px;
+  }
+  form > .left > .form-control{
+    width: 100%;
+  }
+  form > .right > .form-control{
+    width: 80%;
+  }
+  form input {
+    width: 100%;
+    height: 60px;
+  }
+  form > .left {
+    margin-right: 0px;
+  }
+  form > .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form textarea {
+    width: 100%;
+    height: 373px;
+    background-color: #FEFCFC;
+}
+}
+@media screen and (max-width:850px) {
+  form {
+    display: flex;
+    margin: 0 50px;
+  }
+}
+@media screen and (max-width:600px) {
+  form {
+    display: flex;
+    margin: 0 30px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:500px) {
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form > .left{
+    width: 100%;
+  }
+  form > .right{
+    width: 100%;
+  }
+  form {
+    margin: 0 20px;
+  }
+  form > .right > .form-control {
+    width: 100%;
+  }
+  form > .left > .button{
+    visibility: hidden;
+  }
+  form > .right > .button{
+    visibility: visible;
+  }
+}

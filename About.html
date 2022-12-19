@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link href="./css/header.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/About.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="./css/footer.css" />
+</head>
+<body>
+    <!--------header------>
+    <header>
+        <div class="navigation">
+            <nav>
+                <button class="logo">Vulterm</button>
+                <navbar class="nav-wrapper">
+                    <ul>
+                        <div>
+                            <li class="nav-link">
+                                <a href="./index.html"> Home</a>
+                            </li>
+                             <li class="nav-link">
+                                <a href="./FAQ.html">FAQ</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">About us</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="./Contact.html"> Contact Us</a>
+                            </li>
+                        </div>
+                        <section class="links">
+                            <a href="./Login.html" class="login nav-link">Log in</a>
+                            <a href="./sign-up.html" class="sign-up nav-link">Sign Up</a>
+                        </section>
+                    </ul>
+                </navbar>
+                <div class="hamburger" id="hamburger">
+                    <span class="bars" id="bars">&#9776;</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--Main-->
+    <main>
+        <div class="dir">
+            <p> Vulterm / <span>About us</span></p>
+        </div>
+        <div class="heading">
+            <h1> About Us</h1>
+        </div>
+        <div class="about">
+            <h2> Why we started Vulterm?</h2>
+            <p>We are a group of entrepreneurs and legal technologist who have discovered that SMEs are having a tough time getting their policies and terms of use right. There has been issues of incomplete T&C, unreadable and incomprehensive terms of use and so many issues.</p>
+            <p> We therefore came together, researched on didgital laws,compile them and finally categorized them based on location and  type of business.</p>
+            <p> We have decided to take it further and created the "Per annum Package". This package includes everything from basic you need to know concerning legal issues for your business.</p>
+            <p>We also give you the HTML code, PDF, TXT, DOCX file of your privacy policy and Terms of Service. </p>
+        </div>
+    </main>
+    <!---------------footer--------------->
+   <footer>
+      <section class="footer-wrapper">
+        <div class="footer-box" id="part-1">
+          <h5 id="header-01">What our website do</h5>
+          <div class="description">
+            <p>Here we help you genereate the perfect terms </p>
+            <p>and conditions/privacy policy required for </p>
+            <p>your business.</p>
+          </div>
+        </div>
+        <div class="footer-box" id="part-2">
+          <h5>Our Policies</h5>
+          <div class="footer-policy-links">
+              <li><a href="./privacy-policy.html">Privacy policy</li>
+              <li><a href="./T&C.html">T&C policy</a></li>
+              <li><a href="#">Disclaimer</a></li>
+          </div>
+        </div>
+        <div class="footer-box" id="part-3">
+          <h5>About Vulterm</h5>
+          <div class="footer-quick-links">
+              <li><a href="#">About us</a></li>
+              <li><a href="./FAQ.html">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+          </div>
+        </div>
+        <div class="footer-box" id="part-4">
+          <h5>Need help?</h5>
+          <div class="footer-help-links">
+              <li><a href="./Contact.html">Contact us</a></li>
+              <li><a href="#">Our socials</a></li>
+          </div>
+        </div>
+      </section>
+      <hr id="hr">
+      <div class="footer-bottom">
+          <span>copyright <small id="date"></small> vulterm</span>
+          <span>All rights reserved</span>
+      </div>
+    </footer>
+    <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="./js/header.js"></script>
+    <!-- <script src="./js/About.js"></script> -->
+</body>
+</html>
