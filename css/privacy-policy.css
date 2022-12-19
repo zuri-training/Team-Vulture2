@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+}
+body {
+    background-color: #e5edee;
+}
+
+.first-section{
+    background-color: #97CBDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* text-align: center; */
+    letter-spacing: 0.02em;
+    color: #1A191B;
+}
+.first-section > h1{
+    margin-top: 84px;
+    font-weight: 700;
+    padding: 0 150px;
+    font-size: 64px;
+    line-height: 96px;
+}
+.first-section > p{
+    width: 1200px;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0 100px;
+    line-height: 36px;
+    margin: 50px 0;
+}
+.first-section > .button{
+    margin-bottom: 100px;
+}
+.first-section > .button > button{
+    width: 415px;
+    padding: 16px 80px;
+    height: 74px;
+    background: #004581;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.0025em;
+    color: #FBFBFB;
+}
+.second-section {
+    padding: 0 100px;
+}
+.second-section > h3{
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 96px;
+    color: #1A191B;
+}
+.second-section > .container{
+    display: flex;
+}
+.second-section > .container > .left{
+    width: 50%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second-section > .container > .left > p{
+    font-weight: 400;
+    padding: 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #1A191B;
+    margin-bottom: 20px;
+}
+.second-section > .container > .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-section > .container > .right > img{
+    width: 80%;
+}
+
+.section-three{
+    display: flex;
+    padding: 0 100px;
+    margin-top: 200px
+}
+.section-three .left{
+    width: 50%;
+}
+.section-three .right{
+    width: 50%;
+    padding: 20px 0;
+}
+.section-three > .left h3{
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 80px;
+    color: #1A191B;
+    margin-bottom: 50px;
+}
+.section-three > .left >  p{
+    font-weight: 400;
+    width: 503px;
+    height: 64px;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #1A191B;
+}
+.section-three > .right  p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1A191B;
+}
+
+.section-three > .right li{
+    padding: 20px;
+}
+
+.section-four{
+    display: flex;
+    padding: 0rem 4rem;
+    margin: 9rem 0rem;
+    justify-content: space-between;
+}
+.section-four > .left{
+    width: 50%;
+}
+.section-four > .right{
+    width: 50%;
+}
+
+.section-four > .right > img{
+    width: 80%;
+}
+
+.section-four {
+    padding: 0 100px;
+    margin-bottom: 200px;
+}
+.section-four > .left > h3{
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 80px;
+    color: #1A191B;
+    margin-bottom: 100px;
+}
+.section-four > .container{
+    display: flex;
+}
+.section-four > .container > .left{
+    width: 50%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-four > .left > p{
+    font-weight: 400;
+    width: 386px;
+    /* padding: 0 30px; */
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #1A191B;
+    margin-bottom: 20px;
+}
+
+
+/*==========media query==========*/
+@media screen and (max-width:1100px) {
+    .first-section > p {
+        width: 100%;
+    }
+    .first-section > h1 {
+        margin-top: 70px;
+        padding: 0 100px;
+    }
+    .second-section > h3 {
+        margin-top: 20px;
+        font-size: 40px;
+        line-height: 70px;
+    }
+    .section-four > .left > h3 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:900px){
+    .first-section, .second-section, .section-three, .section-four {
+      padding: 0 50px;
+    }
+    .section-three > .left h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .section-four > .left > h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .section-three > .left >  p {
+        width: 100%;
+        height: auto;
+    }
+    .section-four > .left > p {
+        width: 100%;
+        height: auto;
+    }
+    .second-section > .container > .left > p {
+        padding: 0;
+    }
+    .second-section > h3 {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+@media screen and (max-width:500px){
+    .first-section, .second-section, .section-three, .section-four {
+      padding: 0 30px;
+    }
+    .second-section > .container, .section-three, .section-four {
+      flex-direction: column;
+    }
+    .second-section > .container > .left,
+    .second-section > .container > .right,
+    .section-three > .left,
+    .section-three > .right,
+    .section-four > .left,
+    .section-four > .right{
+      width: 100%;
+    }
+    .second-section > .container > .right > img,
+    .section-four > .right > img{
+      width: 100%;
+    }
+    .section-three > .left h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .section-four > .left > h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .section-three > .left >  p {
+        width: 100%;
+        height: auto;
+    }
+    .section-four > .left > p {
+        width: 100%;
+        height: auto;
+    }
+    .second-section > .container > .left > p {
+        padding: 0;
+    }
+    .second-section > h3 {
+        margin-top: 20px;
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .first-section > .button{
+        width: 100%;
+    }
+    .first-section > .button > button {
+        width: 60%;
+        padding: 10px 30px;
+        height: 74px;
+    }
+    .first-section > h1 {
+        margin-top: 70px;
+        padding: 0px;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .first-section > p {
+        font-size: 18px;
+        padding: 0px;
+        line-height: 28px;
+        margin: 50px 0;
+    }
+    .second-section > h3 {
+        text-align: center;
+    }
+    .section-three > .left h3 {
+        text-align: center;
+    }
+}
+@media screen and (max-width:300px) {
+    .first-section > .button > button {
+        width: 100%;
+    }
+}

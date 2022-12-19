@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Home Page</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet"
     />
     <script
-      src="https://kit.fontawesome.com/4e5b9bdb1b.js"
-      crossorigin="anonymous"
+    src="https://kit.fontawesome.com/4e5b9bdb1b.js"
+    crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
     <!--------header------>
-
     <header>
         <div class="navigation">
             <nav>
@@ -26,114 +27,111 @@
                     <ul>
                         <div>
                             <li class="nav-link">
-                                <a href="./index.html"> Home</a>
+                                <a href="#"> Home</a>
                             </li>
                              <li class="nav-link">
-                                <a href="#">FAQ</a>
+                                <a href="./FAQ.html">FAQ</a>
                             </li>
                             <li class="nav-link">
-                                <a href="#">About us</a>
+                                <a href="./About.html">About us</a>
                             </li>
                             <li class="nav-link">
-                                <a href="#"> Contact Us</a>
+                                <a href="./Contact.html"> Contact Us</a>
                             </li>
                         </div>
                         <section class="links">
-                            <a href="./VULTERM-LOGIN/login.html" class="login nav-link">Log in</a>
-                            <a href=" #" class="sign-up nav-link">Sign Up</a>
+                            <a href="./Login.html" class="login nav-link">Log in</a>
+                            <a href="./sign-up.html" class="sign-up nav-link">Sign Up</a>
                         </section>
                     </ul>
-
                 </navbar>
                 <div class="hamburger" id="hamburger">
                     <span class="bars" id="bars">&#9776;</span>
                 </div>
             </nav>
         </div>
-    </header><!-------header ends here-->
-
+    </header>
+    <!-------main here-->
     <main>
-      <section class="body1">
-        <div class="content1">
+      <section class="section1">
+        <div class="left">
           <h1>Best platform for <br />your business</h1>
           <p>
             Here we help you generate the perfect terms and condition/ privacy
-            policy <br />required for your business
+            policy required for your business
           </p>
-          <button><i class="fa-light fa-file-pen"></i>Get Started</button>
+          <div class="button">
+            <button>
+              <span>Get Started</span> 
+              <img src="./IMAGES/Reserve.png" alt="reserve">
+            </button>
+          </div>
         </div>
-        <div class="image1">
+        <div class="right">
           <img src="IMAGES/IMG1.PNG" />
         </div>
       </section>
-      <section class="body2">
-        <div class="content2">
-          <h3>Why you need Terms of Service</h3>
-          <p>
-            Having a good Terms of Service(TOS) is very important for every
-            website or application.<br />Basically, it is a legal agreement
-            between a service and a person that wants to use that<br />service.<br />We
-            will take care to clear all the doubts of your current and upcoming
-            users with our highly<br />professional TOS generator.<br /><br />A
-            terms and condition agreement protects your intellectual property
-            rights, content<br />liability, and gives guidelines on how website
-            information like cookies will be used.
-          </p>
-        </div>
-        <div class="image2">
+      <section class="section2">
+        <div class="left">
           <img src="IMAGES/IMG2.PNG" />
         </div>
-      </section>
-      <section class="body3">
-        <div class="content3">
-          <h3>Why you need a Privacy Policy</h3>
-          <p>
-            For some websites or apps, a Privacy Policy must be implented. In
-            some cases, a Privacy<br />Policy statement is required by law. This
-            depends on the platform you are using, and the<br />information you
-            are collecting<br /><br />Your website of application may collect
-            some kind of personal information. That's where we<br />come in and
-            generate a customized privacy policy explaining:<br /><br /><i
-              class="fa-sharp fa-solid fa-circle-check"
-            ></i
-            >What information you compile and how you compile it.<br /><br /><i
-              class="fa-sharp fa-solid fa-circle-check"
-            ></i
-            >How the information compiled is used.<br /><br /><i
-              class="fa-sharp fa-solid fa-circle-check"
-            ></i
-            >How the information collected is protected.<br /><br /><i
-              class="fa-sharp fa-solid fa-circle-check"
-            ></i
-            >If the information is shared with third parties, and what
-            information is shared.
+        <div class="right">
+          <h3>Why you need Terms of Service</h3>
+          <p class="top">Having a good Terms of Service (TOS) is very important for every website or application. Basically, is a legal agreement between a service and a person that wants to use that service.
+            We will take care to clear all the doubts of your current and upcoming users with our highly professional TOS generator.
           </p>
-        </div>
-        <div class="image3">
-          <img src="IMAGES/IMG3.PNG" />
+          <p>A terms and conditions agreement protects your intellectual property rights, content liability, and gives guidelines on how website information like cookies will be used.</p>
         </div>
       </section>
-      <section class="body4">
-        <div class="content4">
+      <section class="section3">
+        <h3>Why you need a Privacy Policy</h3>
+        <div class="section3_container">
+          <div class="left">
+            <p>For some websites or apps, a Privacy Policy must be implemented. In some cases, a Privacy Policy statement is required by law. This depends on the platform you are using, and the information you are collecting.</p>
+            <p>Your website or application may collect some kind of personal information. That's where we come in and generate a customized privacy policy explaining:</p>
+            <div class="why">
+              <div>
+                <img src="./IMAGES/Ok.png" alt="ok">
+                <p>What information you compile and how you compile it</p>
+              </div>
+              <div>
+                <img src="./IMAGES/Ok.png" alt="ok">
+                <p>How the information compiled is used</p>
+              </div>
+              <div>
+                <img src="./IMAGES/Ok.png" alt="ok">
+                <p>How the information collected is protected</p>
+              </div>
+              <div>
+                <img src="./IMAGES/Ok.png" alt="ok">
+                <p>If the information is shared with third parties, and what information is shared.</p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <img src="IMAGES/IMG3.PNG" />
+          </div>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="left">
           <h3>Why you should choose our agency</h3>
-          <p>
-            We are committed to delivering the best conditions for your
-            business, comapny etc. <br /><br />Our policies also work for your
-            Facebook app, Twitter developer account, Amazon,<br />Squarespace,
-            Blogger,Wordpress,Shopify and literally all kinds of services out
-            there asking<br />for your policies
-          </p>
-          <button type="button">
-            Read More<i class="fa-solid fa-chevrons-right"></i>
-          </button>
+          <p>We are committed to delivering the best conditions for your business, company etc</p>
+          <p>Our policies also work for your Facebook app, Twitter developer account, Amazon, Squarespace, Blogger, Wordpress, Shopify and literally all kinds of services out there asking for your policies.</p>
+          <div class="button">
+            <button>
+              <span>Read more</span> 
+              <img src="./IMAGES/Double Right.png" alt="double right arrow">
+            </button>
+          </div>
         </div>
-        <div class="image4">
+        <div class="right">
           <img src="IMAGES/IMG4.PNG" />
         </div>
       </section>
-      <section class="body5">
+      <section class="section5">
         <div class="left">
-          <div class="content5">
+          <div class="top">
             <h3>What our client says<br />about us</h3>
             <p>Here are a few things our client have to say about<br />us.</p>
           </div>
@@ -182,72 +180,57 @@
           <img src="IMAGES/IMG5.PNG" />
         </div>
       </section>
-      <!--<section class="body6">
-            <h4>Ready to join us?</h4>
-            <p>Subscribe to our newsletter and stay updated</p>
-            <div class="subscribe">
-              <form>
-                <input type="email" placeholder="Enter your E-mail"/>
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
-      </section>-->
     </main>
-   <footer><!---------------footer--------------->
-        <section class="ready-to-join" id="ready-to-join">
-            <h1>Ready to join us?</h1>
-            <p>Subscribe to our newsletter and stay updated!</p>
-           <div class="subscribe">
-                <input type="email" name="email" id="email" placeholder="Enter your E-mail">
-                <button>subscribe</button>
-           </div>
-
-        </section>
-        <section class="footer-wrapper">
-            <div class="footer-box" id="part-1">
-                <h5 id="header-01">What our website do</h5>
-               <div class="description">
-
-                        <p>Here we help you genereate the perfect terms </p>
-                        <p>and conditions/privacy policy required for </p>
-                        <p>your business.</p>
-
-               </div>
-
-            </div>
-            <div class="footer-box" id="part-2">
-                <h5>Our Policies</h5>
-                <div class="footer-policy-links">
-                    <li><a href="">Privacy policy</li>
-                    <li><a href="">T&C policy</a></li>
-                    <li><a href="">Disclaimer</a></li>
-                </div>
-            </div>
-            <div class="footer-box" id="part-3">
-                <h5>About Vulterm</h5>
-                <div class="footer-quick-links">
-                    <li><a href="">About us</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Blog</a></li>
-                </div>
-            </div>
-            <div class="footer-box" id="part-4">
-                <h5>Need help?</h5>
-                <div class="footer-help-links">
-                    <li><a href="">Contact us</a></li>
-                    <li><a href="">Our socials</a></li>
-                </div>
-            </div>
-        </section>
-        <hr id="hr">
-        <div class="footer-bottom">
-            <span>copyright <small id="date"></small> vulterm</span>
-            <span>All rights reserved</span>
+    <!---------------footer--------------->
+   <footer>
+      <section class="ready-to-join" id="ready-to-join">
+          <h1>Ready to join us?</h1>
+          <p>Subscribe to our newsletter and stay updated!</p>
+          <div class="subscribe">
+              <input type="email" name="email" id="email" placeholder="Enter your E-mail">
+              <button>subscribe</button>
+          </div>
+      </section>
+      <section class="footer-wrapper">
+        <div class="footer-box" id="part-1">
+          <h5 id="header-01">What our website do</h5>
+          <div class="description">
+            <p>Here we help you genereate the perfect terms </p>
+            <p>and conditions/privacy policy required for </p>
+            <p>your business.</p>
+          </div>
         </div>
-
+        <div class="footer-box" id="part-2">
+          <h5>Our Products</h5>
+          <div class="footer-policy-links">
+              <li><a href="./privacy-policy.html">Privacy policy Generator</li>
+              <li><a href="./T&C.html">Terms and Conditions Generator</a></li>
+              <li><a href="#">Disclaimer</a></li>
+          </div>
+        </div>
+        <div class="footer-box" id="part-3">
+          <h5>About Vulterm</h5>
+          <div class="footer-quick-links">
+              <li><a href="./About.html">About us</a></li>
+              <li><a href="./FAQ.html">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+          </div>
+        </div>
+        <div class="footer-box" id="part-4">
+          <h5>Need help?</h5>
+          <div class="footer-help-links">
+              <li><a href="./Contact.html">Contact us</a></li>
+              <li><a href="#">Our socials</a></li>
+          </div>
+        </div>
+      </section>
+      <hr id="hr">
+      <div class="footer-bottom">
+          <span>copyright <small id="date"></small> vulterm</span>
+          <span>All rights reserved</span>
+      </div>
     </footer>
-    <script src="index.js">
-
-    </script>
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

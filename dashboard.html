@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <header>
+        <section class="titlecontainer">
+            <div class="top">
+                <h1 class="logo"><a href="./index.html">Vul<span class="term">term</span></a></h1>
+                <div class="hamburger" id="hamburger">
+                    <span class="bars" id="bars">&#9776;</span>
+                </div>
+            </div>
+            <div class="profile_image">
+                <img src="./IMAGES/VULTERM-DASHBOARD/Untitled design (2).png" class="profileimg" alt="">
+                <h4>Hi <span id="firstName"></span></h4>
+            </div>
+        </section>
+        <hr>
+        <section class="linkcont">
+            <div class="links">
+                <div class="icon">
+                    <img src="./IMAGES/VULTERM-DASHBOARD/icons8-dashboard-layout-48.png" width="25px">
+                </div>
+                <a href="#"><span>Dashboard</span></a>
+            </div>
+            <div class="links">
+                <div class="icon">
+                    <img src="./IMAGES/VULTERM-DASHBOARD/icons8-account-24.png" width="25px">
+                </div>
+                <a href="#"><span>My Account</span></a>
+            </div>
+            <div class="links">
+                <div class="icon">
+                    <img src="./IMAGES/VULTERM-DASHBOARD/icons8-handshake-50.png" width="25px">  
+                </div>
+                <a href="#"><span>Agreement <br>Policies</span></a>
+            </div>
+            <div class="links">
+                <div class="icon">
+                        <img src="./IMAGES/VULTERM-DASHBOARD/icons8-security-shield-green-50.png" width="25px">      
+                </div>
+                <a href="#"><span>CCPA +GDPR <br>Privacy consent</span></a>
+            </div>
+            <div class="links chatboard">
+                <div class="icon">
+                        <img src="./IMAGES/VULTERM-DASHBOARD/icons8-communication-30.png" width="25px">      
+                </div>
+                <a href="#"><span>Chat board</span></a>
+            </div>
+            <div class="links">
+                <div class="icon">
+                    <img src="./IMAGES/VULTERM-DASHBOARD/icons8-automatic-50.png" width="25px">             
+                </div>
+                <a href="#"><span>Settings</span></a>
+            </div>
+            <div id="logOut" class="links">
+                <div class="icon">
+                    <img src="./IMAGES/VULTERM-DASHBOARD/icons8-log-out-24.png" width="25px" >                
+                </div>
+                <a href="#"><span>Log Out</span></a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <h2>Select a document</h2>
+        <section class="products">
+            <div class="terms">
+                <img src="./IMAGES/VULTERM-DASHBOARD/terms.png" alt="logo">
+                <p>Terms & Conditions</p>
+                <div class="start">
+                    <p>Start</p>
+                    <img src="./IMAGES/VULTERM-DASHBOARD/forwardArrow.png" alt="">
+                </div>
+            </div>
+            <div class="policy">
+                <img src="./IMAGES/VULTERM-DASHBOARD/policy.png" alt="logo">
+                <p>Privacy Policy</p>
+                <div class="start">
+                    <p>Start</p>
+                    <img src="./IMAGES/VULTERM-DASHBOARD/forwardArrow.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="consent" class="consents">
+            <div class="checks">
+                <div class="product_consent">
+                    <input type="checkbox" name="agree" id="agree" >
+                    <label for="agree">I would like to be added to vulterm's mailing list</label>
+                </div>
+                <div class="product_consent">
+                    <input type="checkbox" name="newsLetter" id="agree" checked>
+                    <label for="newsLetter">I would like to be added to vulterm's mailing list</label>
+                </div>
+            </div>
+            <button id="generate">Generate</button>
+        </section>
+    </main>
+
+    <!-- <script src="./js/header.js"></script> -->
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>

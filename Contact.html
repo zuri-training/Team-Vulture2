@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Page</title>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
+    <link href="./css/Contact.css" rel="stylesheet" />
+    <link href="./css/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <script
+      src="https://kit.fontawesome.com/25d42b44e0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--------header------>
+    <header>
+        <div class="navigation">
+            <nav>
+                <button class="logo">Vulterm</button>
+                <navbar class="nav-wrapper">
+                    <ul>
+                        <div>
+                            <li class="nav-link">
+                                <a href="./index.html"> Home</a>
+                            </li>
+                             <li class="nav-link">
+                                <a href="./FAQ.html">FAQ</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="./About.html">About us</a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="./Contact.html"> Contact Us</a>
+                            </li>
+                        </div>
+                        <section class="links">
+                            <a href="./Login.html" class="login nav-link">Log in</a>
+                            <a href="./sign-up.html" class="sign-up nav-link">Sign Up</a>
+                        </section>
+                    </ul>
+                </navbar>
+                <div class="hamburger" id="hamburger">
+                    <span class="bars" id="bars">&#9776;</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <div class="contain1">
+        <p>Get in touch!</p>
+      </div>
+  
+      <div class="contain2">
+        <p>Contact us for complaints or special requests</p>
+      </div>
+  
+      <div class="container">
+        <div>
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <p>Plot 3 Vulterm street Ikeja</p>
+        </div>
+  
+        <div>
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <p><a href="mailto:contactinfo@vulterm.com">contactinfo@vulterm.com</a></p>
+        </div>
+  
+        <div>
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <p><a href="tel:+23481306611136">+234 813 066 11136</a></p>
+        </div>
+      </div>
+      <h2>Contact form</h2>
+      <form class="form">
+        <div class="left">
+          <div class="form-control">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" placeholder="Enter" required />
+          </div>
+          
+          <div class="form-control">
+            <label for="email">Mail:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              name="wordoflife@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="phoneNumber">Phone :</label>
+            <input
+              type="text"
+              name="phoneNumber"
+              placeholder="+234875678900"
+              name="phonenumber"
+              required
+            />
+          </div>
+          <div class="button">
+            <button>Send Message</button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              class="textarea"
+              name="message"
+              placeholder="Leave a message....."
+              required
+            ></textarea>
+          </div>
+          <div class="button">
+            <button>Send Message</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </main>
+    <!---------------footer--------------->
+    <footer>
+      <section class="footer-wrapper">
+        <div class="footer-box" id="part-1">
+          <h5 id="header-01">What our website do</h5>
+          <div class="description">
+            <p>Here we help you genereate the perfect terms </p>
+            <p>and conditions/privacy policy required for </p>
+            <p>your business.</p>
+          </div>
+        </div>
+        <div class="footer-box" id="part-2">
+          <h5>Our Products</h5>
+          <div class="footer-policy-links">
+              <li><a href="./privacy-policy.html">Privacy policy Generator</li>
+              <li><a href="./T&C.html">Terms and Conditions Generator</a></li>
+              <li><a href="#">Disclaimer</a></li>
+          </div>
+        </div>
+        <div class="footer-box" id="part-3">
+          <h5>About Vulterm</h5>
+          <div class="footer-quick-links">
+              <li><a href="./About.html">About us</a></li>
+              <li><a href="./FAQ.html">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+          </div>
+        </div>
+        <div class="footer-box" id="part-4">
+          <h5>Need help?</h5>
+          <div class="footer-help-links">
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Our socials</a></li>
+          </div>
+        </div>
+      </section>
+      <hr id="hr">
+      <div class="footer-bottom">
+          <span>copyright <small id="date"></small> vulterm</span>
+          <span>All rights reserved</span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

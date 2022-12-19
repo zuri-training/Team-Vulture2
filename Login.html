@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+  rel="stylesheet"
+  />
+  <script
+  src="https://kit.fontawesome.com/4e5b9bdb1b.js"
+  crossorigin="anonymous"
+  ></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'></link>
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+</head>
+<body>
+  <!--------header------>
+  <header>
+      <div class="navigation">
+          <nav>
+              <button class="logo">Vulterm</button>
+              <navbar class="nav-wrapper">
+                  <ul>
+                      <div>
+                          <li class="nav-link">
+                              <a href="./index.html"> Home</a>
+                          </li>
+                            <li class="nav-link">
+                              <a href="./FAQ.html">FAQ</a>
+                          </li>
+                          <li class="nav-link">
+                              <a href="./About.html">About us</a>
+                          </li>
+                          <li class="nav-link">
+                              <a href="./Contact.html"> Contact Us</a>
+                          </li>
+                      </div>
+                      <section class="links">
+                          <a href="./Login.html" class="login nav-link">Log in</a>
+                          <a href="./sign-up.html" class="sign-up nav-link">Sign Up</a>
+                      </section>
+                  </ul>
+              </navbar>
+              <div class="hamburger" id="hamburger">
+                  <span class="bars" id="bars">&#9776;</span>
+              </div>
+          </nav>
+      </div>
+  </header>
+  <!-------main--------->
+  <main class="main">
+    <div class="top">
+      <h1>Login to Vul<span>term</span></h1>
+      <p class="text">New around here? <a href="./sign-up.html">Create an account</a> to join Vulterm</p>
+    </div>
+    <div class="container">
+      <form class="form" id="form" action=""  method="post">
+        <div class="form-control">
+          <label for="email">E-mail address</label>
+          <input type="email" id="email" placeholder="aztechnologies121@gmail.com" name="email">
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="password"> Enter password</label>
+          <input type="password" id="password" name="password" placeholder="Password">
+          <i class="fa-regular fa-eye-slash" id="see_psw"></i>
+          <small>Error Message</small>
+        </div>
+        <a href="#">Forgot password?</a></span>
+        <div class="consent">
+          <input type="checkbox" name="RememberMe" id="RememberMe" >
+          <label for="RememberMe">Remember Me</label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="side">
+        <img src="./IMAGES/VULTERM-LOGIN/IMG.png">
+      </div>
+    </div>
+  </main>
+  <!---------------footer--------------->
+  <footer>
+    <section class="footer-wrapper">
+      <div class="footer-box" id="part-1">
+        <h5 id="header-01">What our website do</h5>
+        <div class="description">
+          <p>Here we help you genereate the perfect terms </p>
+          <p>and conditions/privacy policy required for </p>
+          <p>your business.</p>
+        </div>
+      </div>
+      <div class="footer-box" id="part-2">
+        <h5>Our Products</h5>
+        <div class="footer-policy-links">
+            <li><a href="./privacy-policy.html">Privacy policy Generator</li>
+            <li><a href="./T&C.html">Terms and Conditions Generator</a></li>
+            <li><a href="#">Disclaimer</a></li>
+        </div>
+      </div>
+      <div class="footer-box" id="part-3">
+        <h5>About Vulterm</h5>
+        <div class="footer-quick-links">
+            <li><a href="./About.html">About us</a></li>
+            <li><a href="./FAQ.html">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+        </div>
+      </div>
+      <div class="footer-box" id="part-4">
+        <h5>Need help?</h5>
+        <div class="footer-help-links">
+            <li><a href="./Contact.html">Contact us</a></li>
+            <li><a href="#">Our socials</a></li>
+        </div>
+      </div>
+    </section>
+    <hr id="hr">
+    <div class="footer-bottom">
+        <span>copyright <small id="date"></small> vulterm</span>
+        <span>All rights reserved</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+</html>

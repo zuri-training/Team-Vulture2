@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Poppins:wght@300&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DDE8F0;
+    font-family: 'Poppins', sans-serif;
+}
+/* section 1 */
+.section1{
+    background-color: #e5edee;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+}
+.section1 > .left{
+    width: 60%;
+}
+.section1 > .right{
+    width: 40%;
+}
+.section1 > .left > h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 79px;
+    line-height: 110px;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+.section1 > .left > p{
+    width: 446px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.004em;
+    color: #000000;
+}
+.section1 > .left > .button{
+    display: flex;
+    width: 60%;
+    margin-bottom: 200px;
+    /* margin: 0 50px; */
+    /* background-color: aqua; */
+    justify-content: center;
+}
+.section1 > .left > .button > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 23px;
+    width: 194px;
+    height: 50px;
+    background: #004581;
+    border-radius: 8px;
+}
+.section1 > .left > .button  > button > span{
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F7F7F7;
+}
+.section1 > .right > img{
+    width: 80%;
+}
+
+/* section 2 */
+.section2{
+    background-color: #fff;
+    padding: 30px 100px;
+    display: flex;
+}
+.section2 .right{
+    width: 80%;
+    padding-bottom: 200px;
+    margin-left: 30px;
+}
+.section2 > .right > h3{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.005em;
+    color: #212612;
+}
+.section2 > .right > p{
+    width: 600px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+.section2 > .right > p.top{
+    margin-bottom: 20px;
+}
+.section2 > .left{
+    width: 30%;
+    margin-right: 30px;
+}
+.section2 .left > img{
+    width: 80%;
+    margin-top: 20px;
+    width: 469px;
+    height: 456px;
+}
+
+/* section 3 */
+.section3{
+    background-color: #fff;
+    padding: 30px 100px;
+    margin-top: 50px;
+    width: 100%;
+}
+.section3 > .section3_container{
+    display: flex;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.section3 > .section3_container > .left{
+    width: 60%;
+}
+.section3 > .section3_container > .right{
+    width: 40%;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+.section3 > h3{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.005em;
+    color: #212612;
+}
+.section3 p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #000000;
+}
+.section3 > .section3_container > .left > p{
+    width: 600px;
+    margin-bottom: 30px;
+}
+.section3 > .section3_container > .left > p:first-child{
+    margin-bottom: 50px;
+}
+.section3 > .section3_container > .left > .why > div{
+    margin: 10px 0;
+    display: flex;
+}
+.section3 > .section3_container > .left > .why > div > img{
+    margin-right: 10px;
+}
+
+.section3 > .section3_container > .right > img{
+    width: 629px;
+    height: 456px;
+}
+
+/* section 4 */
+.section4{
+    background-color: #fff;
+    padding: 30px 100px;
+    padding-bottom: 50px;
+    margin-top: 200px;
+    display: flex;
+}
+.section4 > .left{
+    width: 80%;
+}
+.section4 > .right{
+    width: 30%;
+}
+.section4 > .right > img{
+    width: 456px;
+    height: 456px;
+}
+.section4 > .left > h3{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.005em;
+    color: #212612;
+}
+.section4 > .left > p{
+    width: 600px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.section4 > .left > .button{
+    display: flex;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+.section4 > .left > .button > button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 23px;
+    width: 194px;
+    height: 50px;
+    background: #004581;
+    border-radius: 8px;
+}
+.section4 > .left > .button  > button > span{
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F7F7F7;
+}
+
+.section5{
+    background-color: #e5edee;
+    padding: 30px 100px;
+    display: flex;
+}
+
+.section5 > .left{
+    width: 70%
+}
+
+.section5 > .right{
+    width: 30%;
+}
+.section5 h3{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.005em;
+    color: #1A191B;
+}
+
+.section5 > .left > .top{
+    width: 100%;
+}
+.section5 > .left > .testimonies{
+    display: flex;
+    width: 100%;
+    margin: 70px 0 120px 0;
+}
+.section5 > .left > .testimonies > .testimony{
+    display: flex;
+    background-color: #018abd;
+    flex-direction: column;
+    width: calc(90%/3);
+    padding: 20px;
+    border: 1px solid #7BA4A8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+.section5 > .left > .testimonies > .testimony > .top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 10px;
+    width: 100%;
+}
+.section5 > .left > .testimonies > .testimony > .top > img{
+    margin-right: auto;
+}
+.section5 > .left > .testimonies > .testimony > .top > .title{
+    display: flex;
+    flex-direction: column;
+}
+.section5 > .left > .testimonies > .testimony > .top > .title > h5{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+}
+.section5 > .left > .testimonies > .testimony > .top > .title > p{
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: 0.0025em;
+    color: #fff
+}
+
+.section5 > .left > .testimonies > .testimony:nth-child(2){
+    background-color: #018abd;
+    margin: 0 calc(10%/2);
+}
+
+.section5 > .left > .testimonies > .testimony img{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+}
+.section5 > .left > .testimonies > .testimony > p{
+    margin: 30px 0;
+    width: 217px;
+    height: 71px;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+}
+
+@media screen and (max-width: 1300px) {
+    .section1 > .left > .button {
+        margin-bottom: 50px;
+    }
+    .section3 > .section3_container > .right > img {
+        width: 100%;
+        height: auto;
+    }
+    .section4 > .left > .button {
+        display: flex;
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    .section4 > .right > img {
+        width: 100%;
+        height: auto;
+    }
+    .section5 > .left > .testimonies > .testimony > p {
+        margin: 30px 0;
+        width: 100%;
+        height: auto;
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: 0.005em;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .section1 > .left > h1 {
+        font-weight: 500;
+        margin-bottom: 20px;
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: -0.012em;
+        color: #000000;
+    }
+    .section2 .right {
+        width: 70%;
+        padding-bottom: 50px;
+        margin-left: 0px;
+    }
+    .section3 > .section3_container > .left > p {
+        width: 100%;
+    }
+    .section3 > .section3_container > .right {
+        margin-left: 20px;
+    }
+    .section2 .left > img {
+        width: 80%;
+        height: auto;
+    }
+    .section5 > .left > .testimonies > .testimony img {
+        width: 40px;
+        height: 40px;
+    }
+    .section5 > .left > .testimonies > .testimony > .top > .title > h5 {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .section5 > .left > .testimonies > .testimony > .top {
+        margin: 0;
+    }
+    .section5 > .left > .testimonies > .testimony {
+        padding: 10px;
+    }
+    .section5 > .left > .testimonies > .testimony > .top > .title > p {
+        font-size: 8px;
+        line-height: 12px;
+    }
+}
+@media screen and (max-width:1000px) {
+    .section2 > .right > p {
+        width: 100%;
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .section4 > .left {
+        width: 60%;
+    }
+    .section4 > .right {
+        width: 40%;
+    }
+    .section4 > .left > p {
+        width: 100%;
+        font-size: 11px;
+        line-height: 18px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section5 > .left > .testimonies > .testimony img {
+        width: 20px;
+        height: 20px;
+}
+    .section5 > .left > .testimonies > .testimony > .top > .title > h5 {
+        font-size: 8px;
+        line-height: 10px;
+    }
+}
+@media screen and (max-width:500px) {
+    .section1{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .section1 > .left {
+        width: 100%;
+        order: 2;
+    }
+    .section1 > .right {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .section1 > .left > p {
+        width: 100%;
+    }
+    .section1 > .left > h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .section1 > .left > .button {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .section1 > .left > .button > button {
+        width: auto;
+    }
+    .section2{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .section2 > .left {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .section2 > .right {
+        width: 100%;
+    }
+    .section2 > .right > h3 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .section3{
+        padding: 30px;
+    }
+    .section3 > h3 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .section3 > .section3_container {
+        margin-bottom: 100px;
+        flex-direction: column;
+    }
+    .section3 > .section3_container > .left {
+        width: 100%;
+        order: 2;
+    }
+    .section3 > .section3_container > .right {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .section4{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .section4 > .left{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .section4 > .right{
+        width: 100%;
+    }
+    .section4 > .left > h3 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .section5{
+        padding: 30px;
+        flex-direction: column;
+    }
+    .section5 > .left {
+        width: 100%;
+    }
+    .section5 > .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+    .section5 h3 {
+        text-align: center;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    .section5 > .left > .testimonies {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+        flex-direction: column;
+    }
+    .section5 > .left > .testimonies > .testimony {
+        display: flex;
+        background-color: #018abd;
+        flex-direction: column;
+        width: 254px;
+        height: 251px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .section5 > .left > .testimonies > .testimony:nth-child(2) {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .section5 > .left > .testimonies > .testimony img {
+        width: 68px;
+        height: 68px;
+    }
+    .section5 > .left > .testimonies > .testimony > .top {
+        margin: 0 10px;
+        width: 100%;
+    }
+    .section5 > .left > .testimonies > .testimony > p {
+        margin: 30px 0;
+        width: 217px;
+        height: 71px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .section5 > .left > .testimonies > .testimony > .top > .title > h5 {
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .section5 > .left > .testimonies > .testimony > .top > .title > p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .section5 {
+         padding: 0px;
+        flex-direction: column;
+    }
+}
