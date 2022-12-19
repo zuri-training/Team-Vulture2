@@ -53,7 +53,7 @@ button.onclick = ()=>{
     localStorage.getItem("remember") == 1 ? localStorage.removeItem("user") : sessionStorage.removeItem("user")
     localStorage.getItem("remember") == 1 ? localStorage.removeItem("auth") : sessionStorage.removeItem("auth")
     localStorage.getItem("remember") == 1 ? localStorage.removeItem("remember") : sessionStorage.removeItem("remember")
-    window.location.replace("../Login page/login.html") 
+    window.location.replace("./login.html") 
 }
 
 
